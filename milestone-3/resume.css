@@ -1,0 +1,628 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.form-box{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+h1{
+    font-size: 30px;
+}
+h1,p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px ;
+    color: blue;
+}
+p{
+    margin-top: 8px;
+    margin-bottom: 20px ;
+    font-size: 25px;
+    color: rgba(42, 42, 248, 0.753);
+
+}
+.name{
+    font-weight: bold;
+}
+form{
+    padding-top: 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.box{
+    height: fit-content;
+    border: 2px solid rgba(0, 0, 255, 0.438);
+    border-top: none;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 40px;
+}
+
+input,textarea{
+    display: flex;
+    flex-wrap: wrap;
+    width: 98%;
+    padding: 10px;
+    margin-top: 4px;
+    width: calc(100% - 1px);
+    border: 1px solid rgba(248, 59, 59, 0.233);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.education-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.education-input{
+    flex-direction: row;
+    width:  49%;
+    box-sizing: border-box;
+    padding: 9px;
+}
+.experience-btn{
+    width: 100px;
+    padding: 5px;
+    margin-top: 8px;
+}
+
+
+label{
+    margin-top: 22px;
+    display: block;
+    color:blue;
+    font-size: 18px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: rgb(59, 134, 219);
+    border-radius: 5px;
+    color: black;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgb(0,0,0);
+}
+button:hover{
+    background-color: rgb(30, 89, 201);
+}
+
+.btn-small{
+    width: 15%;
+    margin: 15px 5px 35px 5px;
+    box-shadow: 0 2px 4px 0;
+
+}
+
+/* Responsive for mobile */
+@media (max-width : 468px) {
+    p{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    input,textarea{
+        padding: 7px;
+   }
+   .box{
+    padding: 15px;
+   }
+   .education-input{
+    width:  100%;
+    padding: 7px;
+   }
+   label{
+    margin-top: 23px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    }
+    button{
+        padding: 3px;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+   
+}
+
+/* Tablet */
+
+@media  (min-width: 469px) and (max-width: 770px) {
+     p{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    input,textarea{
+        padding: 7px;
+   }
+   .box{
+    padding: 20px;
+   } 
+   .education-input{
+    width:  48%;
+    padding: 7px;
+   }
+   label{
+    margin-top: 23px;
+    font-size: 17px;
+    margin-bottom: 5px;
+    }
+    button{
+        padding: 4px;
+        margin-top: 16px;
+        font-size: 17px;
+    } 
+    
+}
+
+/* Desktop */
+
+@media  (min-width: 770px) and (max-width: 970px) {
+    .education-input{
+        width:   48%;
+        padding: 10px;
+       }
+
+}
+
+
+
+
+/* Genrated Resume Styling */
+
+/* Lest Section */
+.main-div{
+    width: 100%;
+    border: 2px solid rgb(150, 146, 146);
+    border-right: 1px;
+    border-top: 1px ;
+    border-left: 1px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: hwb(0 86% 11%);
+    display: flex;
+    flex-direction: row;
+    padding: 2px;
+    height: 800px;
+    margin: 0px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.left-section{
+    width: 40%;
+    height: 799px;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    border-right: 4px solid blue;
+    text-align: center;
+}
+
+.image-div{
+    width: 51%;
+    margin: 50px auto;
+}
+.left-section img{
+    border: 2px solid blue;
+    box-shadow: 0 2px 8px 0 rgba(61, 61, 245, 0.651);
+}
+.image-div img{
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 100% !important;
+}
+
+
+.left-section h2{
+    text-align: center;
+    border: 1px solid blue;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2px;
+    box-shadow: 0 0px 8px 0 blue;
+    border-radius: 8px;
+    font-size: 22px;
+}
+.left-section h3{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    word-spacing: 3px;
+    margin : 20px auto 35px ;
+}
+.skills li{
+    display: flex;
+    list-style-type: none;
+    width: 65%;
+    border: 1px solid rgba(0, 0, 255, 0.521);
+    color: white;
+    gap: 15px;
+    padding: 7px;
+    margin: 15px;
+    justify-content: center;
+    background-color: rgba(47, 47, 75, 0.521);
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+
+/* right-section */
+.right-section{
+    width: 60%;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 799px;
+    position: relative;
+}
+
+#main-word{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.right-section h3{
+   border: 1px solid blue;
+   box-shadow: 0 1px 5px 0 blue;
+   padding: 5px 7px 5px 7px;
+   width: 90%;
+   border-radius: 8px;
+   margin-top: 25px;
+   margin-bottom: 2px;
+}
+.right-section h4, h3{
+    width: 80%;
+    margin: 16px 10px
+}
+
+.answer{
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.experienceli{
+    list-style-type :circle;
+    font-weight: 500;
+}
+
+.hidden{
+    display: none;
+
+}
+
+.btncontainer{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    padding: 10px 30px 10px 0;
+   position: absolute;
+    margin: 0 auto;
+    text-align: end;
+    justify-content: flex-end;
+    margin-left: 50px;
+    bottom: 5px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+#Copyhareablelink{
+     font-size: 10px;
+     padding: 0px;
+     width: 30%;
+     
+}
+#DownloadasPdf{
+    font-size: 10px;   
+    width: 30%;
+}
+
+
+
+
+
+/* Responsive For Mobile */
+
+@media (max-width: 468px) {
+    .form-box{
+        width: 95%;
+        margin: 20px auto;
+    }
+.left-section{
+    width: 40%;
+    height: 700px;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    border-right: 4px solid blue;
+}
+.image-div{
+    width: 90%;
+    padding: 0px;
+    margin: 40px auto ;
+    text-align: center;
+}
+
+.image-div img{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+}
+
+
+.left-section h2{
+    text-align: center;
+    border: 1px solid blue;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2px;
+    box-shadow: 0 0px 8px 0 blue;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.left-section h3{
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    word-spacing: 3px;
+    margin : 20px auto 25px ;
+}
+ul.skills{
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.skills li{
+    display: flex;
+    list-style-type: none;
+    width: 60%;
+    border: 1px solid rgba(0, 0, 255, 0.521);
+    color: white;
+    gap: 15px;
+    padding: 7px;
+    margin: 15px auto;
+    justify-content: center;
+    background-color: rgba(47, 47, 75, 0.521);
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+/* right secction */
+.right-section{
+    width: 60%;
+    height: 700px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#main-word{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.right-section h3{
+   width: 80%;
+   margin-top: 20px;
+   margin-bottom: 2px;
+   font-size: 15px;
+}
+.right-section h4, h3{
+    width: 90%;
+    margin: 16px 10px
+}
+.right-section h4{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.answer{
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 5px;
+    flex-wrap: wrap;
+}
+
+.btncontainer{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    padding: 10px 50px 10px 0px;
+   position: absolute;
+    margin: 0 auto;
+    text-align: end;
+    justify-content: flex-end;
+    bottom: 5px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+#Copyhareablelink{
+     font-size: 10px;
+     padding: 5px 5px 5px 5px;
+     
+}
+#DownloadasPdf{
+    font-size: 10px;   
+    padding: 5px 5px 5px 5px;
+}
+}
+
+
+/* Responsive for Tablet */
+
+@media (min-width: 469px) and (max-width: 770px) {
+   .form-box{
+    width: 80%;
+    margin: 0  auto;
+}
+.image-div{
+    width: 95%;
+    margin: 50px auto 40px;
+    text-align: center;
+
+}
+.image-div img{
+    width: 125px !important;
+    height: 125px !important;
+    border-radius: 50% !important;
+}
+.left-section h2{
+    text-align: center;
+    border: 1px solid blue;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2px;
+    box-shadow: 0 0px 8px 0 blue;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.left-section h3{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    word-spacing: 3px;
+    margin : 20px auto 25px ;
+}
+ul.skills{
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+.skills li{
+    display: flex;
+    list-style-type: none;
+    width: 70%;
+    border: 1px solid rgba(0, 0, 255, 0.521);
+    color: white;
+    gap: 15px;
+    padding: 7px;
+    margin: 12px auto;
+    justify-content: center;
+    background-color: rgba(47, 47, 75, 0.521);
+    border-radius: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+/* right secction */
+.right-section{
+    width: 60%;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+#main-word{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.right-section h3{
+   width: 85%;
+   margin-top: 20px;
+   margin-bottom: 2px;
+   font-size: 18px;
+}
+.right-section h4, h3{
+    width: 90%;
+    margin: 16px 10px
+}
+.right-section h4{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.answer{
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 5px;
+    flex-wrap: wrap;
+}
+
+.btncontainer{
+    width: 90%;
+    display: flex;
+    gap: 10px;
+    padding: 10px 50px 10px 0;
+    position: absolute;
+    margin: 0 auto;
+   
+    justify-content: flex-end;
+    bottom: 5px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-left: 10px;
+
+}
+#Copyhareablelink{
+     font-size: 13px;
+     padding: 5px 5px 5px 5px;
+     
+}
+#DownloadasPdf{
+    font-size: 13px;   
+    padding: 5px 5px 5px 5px;
+}
+}
+
+
+@media  (min-width : 771px ) and (max-width : 1024px){
+    .form-box{
+        width: 70%;
+        margin: 0  auto;
+    }
+    .image-div{
+        width: 95%;
+        margin: 50px auto 40px;
+        text-align: center;
+    
+    }
+    .image-div img{
+        width: 150px !important;
+        height: 150px !important;
+        border-radius: 50% !important;
+    }
+    .left-section h2{
+        font-size: 22px;
+    } 
+    
+}
+
+/* Add your media print styles here */
+@media print {
+    /* Hide buttons or any elements you don't want to appear in print */
+    .btncontainer {
+        display: none;
+    }
+
+    #resumeform {
+        display: none; /* Hide the form while printing */
+    }
+    .left-section{
+        background-color: black;
+    }
+    .right-section{
+        background-color: white;
+    }
+
+}
+
+
+
